@@ -1,0 +1,14 @@
+---
+layout: default
+title: hallo~
+---
+<h2>{{ page.tile }}</h2>
+<p> new posts </p>
+<ul>
+
+    {% for post in site.posts %}
+        <li>{{ post.data | date_to_string }}<a href="{{ site.baseurl }}{{ post.url}}">{{ post.tile}}</a></li>
+
+    {% endfor %}
+
+</ul>

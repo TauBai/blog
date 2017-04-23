@@ -1,0 +1,7 @@
+---
+layout: default
+tile: hallo~
+---
+<h2>{{ page.title }}</h2>
+<p>first post</p>
+<p>{{ page.date | date_to_string}}</p>
